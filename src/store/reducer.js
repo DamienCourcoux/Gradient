@@ -36,6 +36,11 @@ const reducer = (state = initialState, action) => {
         ...state,
         direction: '90deg',
       };
+    case 'ROTATE_DIRECTTION_TOP_RIGHT':
+      return {
+        ...state,
+        direction: '45deg',
+      };
     default:
       return state;
   }
