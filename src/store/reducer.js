@@ -41,6 +41,21 @@ const reducer = (state = initialState, action) => {
         ...state,
         direction: '45deg',
       };
+    case 'ROTATE_DIRECTTION_BOTTOM_RIGHT':
+      return {
+        ...state,
+        direction: '135deg',
+      };
+    case 'ROTATE_DIRECTTION_BOTTOM_LEFT':
+      return {
+        ...state,
+        direction: '225deg',
+      };
+    case 'ROTATE_DIRECTTION_TOP_LEFT':
+      return {
+        ...state,
+        direction: '315deg',
+      };
     default:
       return state;
   }

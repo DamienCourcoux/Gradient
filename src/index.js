@@ -79,3 +79,18 @@ document.getElementById('toTopRight')
   .addEventListener('click', () => {
     store.dispatch({ type: 'ROTATE_DIRECTTION_TOP_RIGHT' });
   });
+
+document.getElementById('toBottomRight')
+  .addEventListener('click', () => {
+    store.dispatch({ type: 'ROTATE_DIRECTTION_BOTTOM_RIGHT' });
+  });
+
+document.getElementById('toBottomLeft')
+  .addEventListener('click', () => {
+    store.dispatch({ type: 'ROTATE_DIRECTTION_BOTTOM_LEFT' });
+  });
+
+document.getElementById('toTopLeft')
+  .addEventListener('click', () => {
+    store.dispatch({ type: 'ROTATE_DIRECTTION_TOP_LEFT' });
+  });
