@@ -74,3 +74,8 @@ document.getElementById('toRight')
   .addEventListener('click', () => {
     store.dispatch({ type: 'ROTATE_DIRECTTION_RIGHT' });
   });
+
+document.getElementById('toTopRight')
+  .addEventListener('click', () => {
+    store.dispatch({ type: 'ROTATE_DIRECTTION_TOP_RIGHT' });
+  });
