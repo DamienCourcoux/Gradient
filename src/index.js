@@ -67,30 +67,30 @@ document.getElementById('randLast')
 
 document.getElementById('toLeft')
   .addEventListener('click', () => {
-    store.dispatch({ type: 'ROTATE_DIRECTTION_LEFT' });
+    store.dispatch({ type: 'ROTATE_DIRECTTION', angle: '270deg' });
   });
 
 document.getElementById('toRight')
   .addEventListener('click', () => {
-    store.dispatch({ type: 'ROTATE_DIRECTTION_RIGHT' });
+    store.dispatch({ type: 'ROTATE_DIRECTTION', angle: '90deg' });
   });
 
 document.getElementById('toTopRight')
   .addEventListener('click', () => {
-    store.dispatch({ type: 'ROTATE_DIRECTTION_TOP_RIGHT' });
+    store.dispatch({ type: 'ROTATE_DIRECTTION', angle: '45deg' });
   });
 
 document.getElementById('toBottomRight')
   .addEventListener('click', () => {
-    store.dispatch({ type: 'ROTATE_DIRECTTION_BOTTOM_RIGHT' });
+    store.dispatch({ type: 'ROTATE_DIRECTTION', angle: '135deg' });
   });
 
 document.getElementById('toBottomLeft')
   .addEventListener('click', () => {
-    store.dispatch({ type: 'ROTATE_DIRECTTION_BOTTOM_LEFT' });
+    store.dispatch({ type: 'ROTATE_DIRECTTION', angle: '225deg' });
   });
 
 document.getElementById('toTopLeft')
   .addEventListener('click', () => {
-    store.dispatch({ type: 'ROTATE_DIRECTTION_TOP_LEFT' });
+    store.dispatch({ type: 'ROTATE_DIRECTTION', angle: '315deg' });
   });

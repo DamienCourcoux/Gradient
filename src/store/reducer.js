@@ -26,35 +26,10 @@ const reducer = (state = initialState, action) => {
         lastColor: action.newLastColor,
         nbColors: state.nbColors + 2,
       };
-    case 'ROTATE_DIRECTTION_LEFT':
+    case 'ROTATE_DIRECTTION':
       return {
         ...state,
-        direction: '270deg',
-      };
-    case 'ROTATE_DIRECTTION_RIGHT':
-      return {
-        ...state,
-        direction: '90deg',
-      };
-    case 'ROTATE_DIRECTTION_TOP_RIGHT':
-      return {
-        ...state,
-        direction: '45deg',
-      };
-    case 'ROTATE_DIRECTTION_BOTTOM_RIGHT':
-      return {
-        ...state,
-        direction: '135deg',
-      };
-    case 'ROTATE_DIRECTTION_BOTTOM_LEFT':
-      return {
-        ...state,
-        direction: '225deg',
-      };
-    case 'ROTATE_DIRECTTION_TOP_LEFT':
-      return {
-        ...state,
-        direction: '315deg',
+        direction: action.angle,
       };
     default:
       return state;
